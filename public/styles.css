@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*Header and Nav**/
+header {
+  background-color: #000;
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+
+
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+
+.nav {
+  background-color: #cccccc;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a:hover{
+  color: red;
+}
+
+
+/*Page Styling */
+h2 {
+    background-color: #f9492b;
+    padding: 10px;
+    font-weight: 400;
+}
+
+
+/*Footer*/
+footer{
+  background-color: #000;
+  color: #FFF;
+  font-size: 0.7em;
+  padding: 10px;
+  text-align: center;
+}

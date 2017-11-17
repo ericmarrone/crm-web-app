@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Contacts</title>
-  </head>
-  <body>
-    <main>
-      <% @all_contacts.each do |contact| %>
 
-        <h2>Contact <%= contact.id %></h2>
-        <ul>
-          <li>First Name: <%= contact.first_name %></li>
-          <li>Last Name: <%= contact.last_name %></li>
-          <li>email: <%= contact.email %></li>
-          <li>Note: <%= contact.note %></li>
-        </ul>
+<nav>
+  <ul>
+    <li class="nav"><a href="/">Home</a></li>
+    <li class="nav"><a href="#">Add a contact</a></li>
+    <li class="nav"><a href="/about">About</a></li>
+  </ul>
+</nav>
+<main>
+  <h2>There are <%= @all_contacts.count %> contacts</h2>
+  <ul>
+    <% @all_contacts.each do |contact| %>
+        <li ><%= contact.full_name %> (<%= contact.email %>)
+          <div class="options">
+            <a href="#">Edit</a> | <a href="#">Delete</a>
+          </div>
+
+        </li>
+
+        <!-- <li>Note: <%= contact.note %></li> -->
+
       <% end %>
-      <a href="/">Back</a>
-    </main>
-  </body>
-</html>
+  </ul>
+  <a href="/">Back</a>
+</main>
