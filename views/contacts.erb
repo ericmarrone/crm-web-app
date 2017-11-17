@@ -7,10 +7,10 @@
   </ul>
 </nav>
 <main>
-  <h2>There are <%= @all_contacts.count %> contacts</h2>
-  <ul>
+  <h2>There are <span><%= @all_contacts.count %></span> contacts</h2>
+  <ul class="contacts">
     <% @all_contacts.each do |contact| %>
-        <li ><%= contact.full_name %> (<%= contact.email %>)
+        <li class="contact"><%= contact.full_name %> (<%= contact.email %>)
           <div class="options">
             <a href="#">Edit</a> | <a href="#">Delete</a>
           </div>

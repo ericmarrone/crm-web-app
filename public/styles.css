@@ -26,6 +26,7 @@ nav ul {
   list-style-type: none;
   font-weight: bold;
   font-size: 1.2em;
+  padding-left: 0;
 
 }
 
@@ -33,6 +34,8 @@ nav ul {
   background-color: #cccccc;
   margin-bottom: 2px;
   padding: 5px;
+  width: 100%;
+
 }
 
 .nav a {
@@ -46,10 +49,42 @@ nav ul {
 
 
 /*Page Styling */
+/*Header*/
 h2 {
     background-color: #f9492b;
     padding: 10px;
     font-weight: 400;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+
+/* Contacts Styling */
+
+.contacts {
+  margin-left: 0;
+  padding-left: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+.contact {
+  background-color: #00DFCA;
+  padding: 20px 15px;
+  margin: 10px 0;
+  list-style-type: none;
+  font-weight: bold;
+
+}
+
+.options, .options a {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: blue;
+  margin-top: 5px;
 }
 
 
