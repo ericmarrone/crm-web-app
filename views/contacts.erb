@@ -12,11 +12,11 @@
     <% @all_contacts.each do |contact| %>
         <li class="contact"><%= contact.full_name %> (<%= contact.email %>)
           <div class="options">
-            <a href="/contacts/<%= contact.id %>">View</a> |<a href="#">Edit</a> | <a href="#">Delete</a>
+            <a href="/contacts/<%= contact.id %>">View</a> | <a href="/contacts/<%= contact.id %>/edit">Edit</a> | <a href="#">Delete</a>
           </div>
         </li>
 
       <% end %>
   </ul>
-  
+
 </main>
