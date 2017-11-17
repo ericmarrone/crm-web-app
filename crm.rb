@@ -15,6 +15,10 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/new' do
+  erb :new
+end
+
 get '/contacts/:id' do
   @contact = Contact.find_by({id: params[:id].to_i})
   if @contact
@@ -24,10 +28,15 @@ get '/contacts/:id' do
  end
 end
 
-get '/new' do
-  erb :new
+post '/contacts' do
+  Contact.create(
+    first_name: params[:first_name],
+    last_name:  params[:last_name],
+    email:      params[:email],
+    note:       params[:note]
+  )
+  redirect to('/contacts')
 end
-
 
 after do
   ActiveRecord::Base.connection.close
